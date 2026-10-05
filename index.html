@@ -5,10 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Materiale Construcții Timișoara | Brezoi Construct - Zona Mehala</title>
+
+<!-- FAVICON ȘI LOGO PENTRU GOOGLE ȘI BROWSERE -->
 <link rel="icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
+<link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
+
 <meta name="description" content="Depozit de materiale de construcții cu tradiție de 30 de ani în Timișoara. Găsești ciment, polistiren, vopsele, scule și lemn. Oferim transport și consultanță.">
 <meta name="robots" content="index, follow">
 
+<!-- SEO LOCAL AVANSAT (SCHEMA MARKUP ACTUALIZATĂ) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,6 +35,7 @@
     "latitude": 45.7667, 
     "longitude": 21.1951
   },
+  "areaServed": "Timișoara și județul Timiș",
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
@@ -38,7 +44,6 @@
 </script>
 
 <style>
-    /* --- 1. SETĂRI GENERALE --- */
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     
     html, body {
@@ -49,9 +54,37 @@
         overflow-x: hidden;
     }
 
-    /* --- 2. HEADER --- */
+    /* BARĂ PROGRAM DINAMIC */
+    .status-bar {
+        background-color: #0c2444;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid #00A3E0;
+    }
+    .status-badge {
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .status-deschis { background-color: #2e7d32; color: white; }
+    .status-inchis { background-color: #c62828; color: white; }
+
     .header-fix {
-        position: fixed; top: 0; left: 0; width: 100%; height: 120px; 
+        position: fixed; top: 41px; left: 0; width: 100%; height: 120px; 
         background-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         z-index: 99999;
         display: flex; align-items: center; justify-content: center;
@@ -63,7 +96,6 @@
     .logo-link { display: block; text-decoration: none; z-index: 100000; }
     .logo-svg { height: 90px; width: auto; display: block; }
 
-    /* Meniul Desktop */
     .nav-links { display: flex; gap: 30px; }
     .nav-links a { 
         text-decoration: none; color: #001F3F; font-weight: 800; font-size: 18px; 
@@ -71,7 +103,6 @@
     }
     .nav-links a:hover { color: #00A3E0; }
 
-    /* Buton Mobil (Hamburger) */
     .mobile-btn { 
         display: none; 
         font-size: 45px; 
@@ -84,10 +115,9 @@
         position: relative;
     }
 
-    /* Meniul Mobil (Ascuns default) */
     .mobile-menu {
         display: none; 
-        position: fixed; top: 120px; left: 0; width: 100%;
+        position: fixed; top: 161px; left: 0; width: 100%;
         background: white; border-top: 1px solid #eee; 
         flex-direction: column; padding: 0;
         box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
@@ -101,12 +131,10 @@
     }
     .mobile-menu a:active { background-color: #f0f8ff; }
 
-    /* --- SECTIUNI --- */
-    section { width: 100%; display: flex; justify-content: center; padding: 150px 20px; }
+    section { width: 100%; display: flex; justify-content: center; padding: 150px 20px; margin-top: 41px; }
     .container { width: 100%; max-width: 1400px; text-align: center; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
     .titlu-sectiune { font-size: 2.5rem; color: #001F3F; margin-bottom: 40px; line-height: 1.3; font-weight: bold; }
 
-    /* HERO */
     #home {
         background: linear-gradient(135deg, #001F3F 0%, #0074D9 100%);
         color: white; min-height: 100vh; padding-top: 150px;
@@ -120,7 +148,6 @@
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
-    /* PRODUSE */
     #produse { background-color: white; }
     .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px; width: 100%; }
     .card { width: 260px; text-decoration: none; color: #333; display: flex; flex-direction: column; align-items: center; }
@@ -128,7 +155,6 @@
     .poza-cerc img { width: 100%; height: 100%; object-fit: cover; }
     .card h3 { font-size: 1.5rem; color: #001F3F; margin: 0; font-weight: 700; }
 
-    /* CONTACT */
     #contact { background-color: #f9f9f9; border-top: 8px solid #001F3F; }
     .split-layout { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px; text-align: left; margin-top: 50px; width: 100%; }
     .faq-side { flex: 1; min-width: 300px; }
@@ -145,7 +171,6 @@
     .contact-box.admin h3 { color: #555; font-size: 1.5rem; margin: 0 0 10px 0; }
     .contact-box.admin p { word-break: break-all; }
 
-    /* FOOTER */
     footer { background-color: #1a1a1a; color: #ddd; padding: 80px 20px 30px 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%; }
     .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; width: 100%; max-width: 1200px; margin-bottom: 50px; text-align: left; }
     .footer-col details { background: transparent; border: none; padding: 0; margin: 0; }
@@ -157,27 +182,23 @@
     .footer-col a:hover { color: #00A3E0; }
     .footer-bottom { border-top: 1px solid #333; padding-top: 30px; width: 100%; max-width: 1200px; text-align: center; font-size: 0.9rem; color: #777; }
 
-    /* MOBIL */
     @media (max-width: 900px) {
-        .header-fix { height: 100px; } .logo-svg { height: 60px; }
+        .header-fix { height: 100px; top: 38px; } .logo-svg { height: 60px; }
         .nav-links { display: none; } 
-        
-        /* BUTONUL MOBIL VIZIBIL */
         .mobile-btn { display: block; } 
-        
-        .mobile-menu { top: 100px; }
-        section { padding: 100px 15px; } 
+        .mobile-menu { top: 138px; }
+        section { padding: 100px 15px; margin-top: 38px; } 
         .hero-titlu { font-size: 2.2rem; line-height: 1.2; } .titlu-sectiune { font-size: 1.8rem; line-height: 1.4; }
         .hero-sub { font-size: 1.1rem; padding: 0 10px; } .btn { padding: 15px 40px; font-size: 18px; }
         .split-layout { flex-direction: column; gap: 40px; } .faq-side, .contact-side { min-width: 100%; }
         .contact-box { padding: 25px; } .phone-big { font-size: 1.8rem; }
-        
         .footer-grid { grid-template-columns: 1fr; gap: 10px; }
         .footer-col details { border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px; }
         .footer-col summary { cursor: pointer; margin-bottom: 5px; display: flex; justify-content: space-between; }
         .footer-col summary::after { content: '+'; float: right; font-weight: normal; }
         .footer-col details[open] summary::after { content: '-'; }
         .footer-col ul { padding-top: 10px; padding-left: 10px; }
+        .status-bar { font-size: 12px; padding: 8px; }
     }
     @media (min-width: 901px) {
         .footer-col details { display: block !important; }
@@ -187,6 +208,11 @@
 </style>
 </head>
 <body>
+
+    <div class="status-bar" id="statusBar">
+        <span>Depozit Mehala, Timișoara:</span>
+        <span id="statusBadge" class="status-badge">Se verifică...</span>
+    </div>
 
     <div class="header-fix">
         <div class="header-content">
@@ -291,6 +317,39 @@
     </footer>
 
     <script src="//code.tidio.co/hii2wppyfe8jhpzrtagtu9sznrm9cx7u.js" async></script>
+
+    <script>
+        function checkDepozitStatus() {
+            const now = new Date();
+            const day = now.getDay(); 
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            const currentTime = hour * 60 + minute;
+
+            const badge = document.getElementById('statusBadge');
+            let isOpen = false;
+
+            if (day >= 1 && day <= 5) {
+                if (currentTime >= 480 && currentTime < 1020) {
+                    isOpen = true;
+                }
+            } 
+            else if (day === 6) {
+                if (currentTime >= 480 && currentTime < 720) {
+                    isOpen = true;
+                }
+            }
+
+            if (isOpen) {
+                badge.className = "status-badge status-deschis";
+                badge.innerText = "● Deschis Acum";
+            } else {
+                badge.className = "status-badge status-inchis";
+                badge.innerText = "● Închis (Ne vedem mâine)";
+            }
+        }
+        checkDepozitStatus();
+    </script>
 
 </body>
 </html>
