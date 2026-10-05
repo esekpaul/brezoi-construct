@@ -6,11 +6,12 @@
 
 <title>Locație și Contact | Brezoi Construct Timișoara</title>
 <link rel="icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
+<link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
+
 <meta name="description" content="Cum ajungi la Brezoi Construct? Str. Lt. Ovidiu Balea 2A, Timișoara (zona Mehala). Harta, indicații și program de lucru.">
 <meta name="robots" content="index, follow">
 
 <style>
-    /* --- SETARI GENERALE --- */
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     body {
         margin: 0; padding: 0; width: 100%; height: auto;
@@ -19,7 +20,6 @@
         background-color: #1a1a1a; overflow-x: hidden;
     }
 
-    /* HEADER */
     .header-fix {
         position: fixed; top: 0; left: 0; width: 100%; height: 120px;
         background-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -32,7 +32,6 @@
     .logo-svg { height: 90px; width: auto; display: block; transition: transform 0.3s; }
     .logo-link:hover .logo-svg { transform: scale(1.05); }
 
-    /* Meniul Desktop - MARIT SCRISUL LA 20px PENTRU VIZIBILITATE */
     .nav-links { display: flex; gap: 25px; }
     .nav-links a { 
         text-decoration: none; color: #001F3F; font-weight: 800; font-size: 20px;
@@ -41,7 +40,6 @@
     .nav-links a:hover { color: #00A3E0; background: #f0f8ff; border-radius: 5px; }
     .active-page { color: #00A3E0 !important; border-bottom: 3px solid #00A3E0; }
 
-    /* Buton Mobil (Hamburger) */
     .mobile-btn { 
         display: none; 
         font-size: 45px; 
@@ -54,7 +52,6 @@
         position: relative;
     }
     
-    /* Meniul Mobil - MARIT SCRISUL LA 24px */
     .mobile-menu {
         display: none; position: fixed; top: 120px; left: 0; width: 100%;
         background: white; border-top: 1px solid #eee; flex-direction: column; padding: 0;
@@ -67,7 +64,6 @@
     }
     .mobile-menu a:active { background-color: #f0f8ff; }
 
-    /* --- CONTENT LOCATIE --- */
     .section-locatie { 
         padding: 160px 20px 100px 20px; 
         display: flex; justify-content: center;
@@ -83,19 +79,15 @@
     }
 
     .map-frame {
-        flex: 3; min-width: 300px; 
-        height: 600px; 
+        flex: 3; min-width: 300px; height: 600px; 
         border-radius: 20px; overflow: hidden;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 8px solid #fff;
-        background: white;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 8px solid #fff; background: white;
     }
     iframe { width: 100%; height: 100%; border: 0; }
 
     .info-panel {
-        flex: 2; min-width: 300px;
-        background: #f9f9f9; padding: 40px; border-radius: 20px;
-        border-left: 12px solid #00A3E0;
-        display: flex; flex-direction: column; justify-content: center;
+        flex: 2; min-width: 300px; background: #f9f9f9; padding: 40px; border-radius: 20px;
+        border-left: 12px solid #00A3E0; display: flex; flex-direction: column; justify-content: center;
         box-shadow: 0 20px 50px rgba(0,0,0,0.3);
     }
     .info-item { margin-bottom: 40px; }
@@ -104,7 +96,6 @@
     .info-item p { font-size: 1.2rem; color: #555; margin: 0; line-height: 1.6; }
     .repere { background: #eef; padding: 25px; border-radius: 10px; margin-top: 20px; font-size: 1.1rem; color: #001F3F; line-height: 1.8;}
 
-    /* --- FOOTER --- */
     footer {
         background-color: #1a1a1a; color: #ddd; padding: 80px 20px 30px 20px;
         display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%;
@@ -121,7 +112,6 @@
     .footer-col a:hover { color: #00A3E0; }
     .footer-bottom { border-top: 1px solid #333; padding-top: 30px; width: 100%; max-width: 1200px; text-align: center; font-size: 0.9rem; color: #777; }
 
-    /* RESPONSIVE */
     @media (max-width: 900px) {
         .header-fix { height: 100px; } .logo-svg { height: 60px; }
         .nav-links { display: none; } .mobile-btn { display: block; } .mobile-menu { top: 100px; }
@@ -148,7 +138,7 @@
 
     <div class="header-fix">
         <div class="header-content">
-            <a href="/" class="logo-link">
+            <a href="index.html" class="logo-link">
                 <svg class="logo-svg" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M75 60 L150 20 L225 60 L210 60 L150 28 L90 60 H75Z" fill="#00A3E0"/>
                     <path d="M165 48 V60 H185 V48 L175 42 L165 48Z" fill="#00A3E0"/>
@@ -157,25 +147,23 @@
                 </svg>
             </a>
             
-            <!-- MENIU PC ACTUALIZAT CU OPȚIUNEA /Branduri-Partenere ȘI TEXT MĂRIT -->
             <nav class="nav-links">
-                <a href="/">Acasă</a>
-                <a href="/#produse">Produse</a>
-                <a href="/Branduri-Partenere">Branduri Partenere</a>
-                <a href="/locatie-magazin" class="active-page">Locație Magazin</a>
-                <a href="/#contact">Contact</a>
+                <a href="index.html">Acasă</a>
+                <a href="index.html#produse">Produse</a>
+                <a href="branduri-partenere.html">Branduri Partenere</a>
+                <a href="locatie-magazin.html" class="active-page">Locație Magazin</a>
+                <a href="index.html#contact">Contact</a>
             </nav>
             <button class="mobile-btn" onclick="toggleMobileMenu()">☰</button>
         </div>
     </div>
 
-    <!-- MENIU MOBIL ACTUALIZAT CU OPȚIUNEA /Branduri-Partenere ȘI TEXT MĂRIT -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="/" onclick="toggleMobileMenu()">Acasă</a>
-        <a href="/#produse" onclick="toggleMobileMenu()">Produse</a>
-        <a href="/Branduri-Partenere" onclick="toggleMobileMenu()">Branduri Partenere</a>
-        <a href="/locatie-magazin" onclick="toggleMobileMenu()">Locație Magazin</a>
-        <a href="/#contact" onclick="toggleMobileMenu()">Contact</a>
+        <a href="index.html" onclick="toggleMobileMenu()">Acasă</a>
+        <a href="index.html#produse" onclick="toggleMobileMenu()">Produse</a>
+        <a href="branduri-partenere.html" onclick="toggleMobileMenu()">Branduri Partenere</a>
+        <a href="locatie-magazin.html" onclick="toggleMobileMenu()">Locație Magazin</a>
+        <a href="index.html#contact" onclick="toggleMobileMenu()">Contact</a>
     </div>
 
     <section class="section-locatie">
@@ -183,9 +171,8 @@
             <h1 class="titlu-mare">Locație Magazin</h1>
             <div class="map-container">
                 <div class="map-frame">
-                    <!-- HARTA GOOGLE RECONSTRUITĂ CU PIN NATIV FIXAT PE CLĂDIREA DE LÂNGĂ PROFI -->
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.6322971512403!2d21.194364175510613!3d45.7667232235955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455dfa54b3df63%3A0x6e9f28a8d11dcb14!2zNDXCsDQ2JzAwLjIiTiAyMcKwMTEnNDAuNCJF!5e0!3m2!1sro!2sro!4v1716815000000!5m2!1sro!2sro" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.6322971512403!2d21.194364175510613!3d45.7667232235955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455dfa54b3df63%3A0x6e9f28a8d11dcb14!2sNDXCsDQ2JzAwLjIiTiAyMcKwMTEnNDAuNCJF!5e0!3m2!1sro!2sro!4v1716815000000!5m2!1sro!2sro" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
@@ -220,7 +207,7 @@
                 <details open>
                     <summary>Compania</summary>
                     <ul>
-                        <li><a href="/despre-noi">Despre Brezoi Construct</a></li>
+                        <li><a href="locatie-magazin.html">Despre Brezoi Construct</a></li>
                         <li><a>Termeni și condiții</a></li>
                         <li><a>Politica de confidențialitate</a></li>
                         <li><a>Politica de cookies</a></li>
@@ -231,7 +218,7 @@
                 <details open>
                     <summary>Suport Clienți</summary>
                     <ul>
-                        <li><a href="/#contact">Contactează-ne</a></li>
+                        <li><a href="index.html#contact">Contactează-ne</a></li>
                         <li><a>Întrebări frecvente</a></li>
                         <li><a>Metode de plată</a></li>
                     </ul>
