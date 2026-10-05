@@ -48,12 +48,30 @@
         overflow-x: hidden;
     }
 
+    /* BANNER TEST VISIBIL */
+    .test-banner {
+        background-color: #FFD700;
+        color: #000;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: 900;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000000;
+        border-bottom: 5px solid #FF0000;
+        text-transform: uppercase;
+    }
+
     .header-fix {
-        position: fixed; top: 0; left: 0; width: 100%; height: 120px; 
+        position: fixed; top: 70px; left: 0; width: 100%; height: 120px; 
         background-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         z-index: 99999;
         display: flex; align-items: center; justify-content: center;
     }
+    
     .header-content {
         width: 90%; max-width: 1800px; display: flex; justify-content: space-between; align-items: center;
         height: 100%;
@@ -82,7 +100,7 @@
 
     .mobile-menu {
         display: none; 
-        position: fixed; top: 120px; left: 0; width: 100%;
+        position: fixed; top: 190px; left: 0; width: 100%;
         background: white; border-top: 1px solid #eee; 
         flex-direction: column; padding: 0;
         box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
@@ -96,7 +114,7 @@
     }
     .mobile-menu a:active { background-color: #ffeeee; }
 
-    section { width: 100%; display: flex; justify-content: center; padding: 150px 20px; }
+    section { width: 100%; display: flex; justify-content: center; padding: 150px 20px; margin-top: 70px; }
     .container { width: 100%; max-width: 1400px; text-align: center; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
     .titlu-sectiune { font-size: 2.5rem; color: #8B0000; margin-bottom: 40px; line-height: 1.3; font-weight: bold; }
 
@@ -148,11 +166,11 @@
     .footer-bottom { border-top: 1px solid #333; padding-top: 30px; width: 100%; max-width: 1200px; text-align: center; font-size: 0.9rem; color: #777; }
 
     @media (max-width: 900px) {
-        .header-fix { height: 100px; } .logo-svg { height: 60px; }
+        .header-fix { height: 100px; top: 70px; } .logo-svg { height: 60px; }
         .nav-links { display: none; } 
         .mobile-btn { display: block; } 
-        .mobile-menu { top: 100px; }
-        section { padding: 100px 15px; } 
+        .mobile-menu { top: 170px; }
+        section { padding: 100px 15px; margin-top: 70px; } 
         .hero-titlu { font-size: 2.2rem; line-height: 1.2; } .titlu-sectiune { font-size: 1.8rem; line-height: 1.4; }
         .hero-sub { font-size: 1.1rem; padding: 0 10px; } .btn { padding: 15px 40px; font-size: 18px; }
         .split-layout { flex-direction: column; gap: 40px; } .faq-side, .contact-side { min-width: 100%; }
@@ -163,6 +181,7 @@
         .footer-col summary::after { content: '+'; float: right; font-weight: normal; }
         .footer-col details[open] summary::after { content: '-'; }
         .footer-col ul { padding-top: 10px; padding-left: 10px; }
+        .test-banner { font-size: 18px; padding: 15px; }
     }
     @media (min-width: 901px) {
         .footer-col details { display: block !important; }
@@ -172,6 +191,10 @@
 </style>
 </head>
 <body>
+
+    <div class="test-banner">
+        🔴 TEST GITHUB - SITE-UL FUNCȚIONEAZĂ! 🔴
+    </div>
 
     <div class="header-fix">
         <div class="header-content">
