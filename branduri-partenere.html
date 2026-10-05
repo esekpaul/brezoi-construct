@@ -7,11 +7,11 @@
 <title>Branduri și Parteneri | Brezoi Construct Timișoara</title>
 <link rel="icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
 <link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
-
 <meta name="description" content="Colaborăm cu producători de top: Holcim, Cemacon, Ceresit, AdePlast, Baumit, Knauf și mulți alții. Materiale de construcții de calitate in Timișoara.">
 <meta name="robots" content="index, follow">
 
 <style>
+    /* --- SETĂRI GENERALE --- */
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     body {
         margin: 0; padding: 0; width: 100%; height: auto;
@@ -20,6 +20,7 @@
         background-color: #1a1a1a; overflow-x: hidden;
     }
 
+    /* HEADER */
     .header-fix {
         position: fixed; top: 0; left: 0; width: 100%; height: 120px;
         background-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -63,6 +64,7 @@
         display: block; width: 100%;
     }
 
+    /* --- CONȚINUT BRANDURI --- */
     .section-branduri { 
         padding: 160px 20px 100px 20px; 
         display: flex; justify-content: center;
@@ -73,6 +75,7 @@
     .titlu-mare { font-size: 3rem; color: #ffffff; font-weight: bold; margin-bottom: 20px; }
     .subtitlu-mare { font-size: 1.3rem; color: #e0f0ff; margin-bottom: 60px; max-width: 800px; margin-left: auto; margin-right: auto; }
 
+    /* RÂNDURI ZIG-ZAG */
     .brand-row {
         display: flex;
         align-items: center;
@@ -97,20 +100,49 @@
         border-right: 10px solid #00A3E0;
     }
 
-    .brand-info { flex: 3; }
-    .brand-info h2 { color: #001F3F; font-size: 2.2rem; margin: 0 0 15px 0; }
-    .brand-info p { color: #555; font-size: 1.15rem; line-height: 1.7; margin: 0 0 20px 0; }
+    .brand-info {
+        flex: 3;
+    }
+    .brand-info h2 {
+        color: #001F3F;
+        font-size: 2.2rem;
+        margin: 0 0 15px 0;
+    }
+    .brand-info p {
+        color: #555;
+        font-size: 1.15rem;
+        line-height: 1.7;
+        margin: 0 0 20px 0;
+    }
     .tag-materiale {
-        display: inline-block; background: #eef5fc; color: #0074D9;
-        padding: 6px 15px; border-radius: 50px; font-weight: bold; font-size: 0.9rem;
+        display: inline-block;
+        background: #eef5fc;
+        color: #0074D9;
+        padding: 6px 15px;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 0.9rem;
     }
 
     .brand-logo-holder {
-        flex: 1.5; display: flex; justify-content: center; align-items: center;
-        background: #ffffff; padding: 20px; border-radius: 15px; border: 1px solid #eee; min-height: 180px;
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #eee;
+        min-height: 180px;
     }
-    .brand-logo-holder span { font-size: 1.8rem; font-weight: 900; color: #001F3F; text-transform: uppercase; letter-spacing: 2px; }
+    .brand-logo-holder img {
+        max-width: 100%;
+        height: auto;
+        max-height: 110px;
+        object-fit: contain;
+    }
 
+    /* --- FOOTER --- */
     footer {
         background-color: #1a1a1a; color: #ddd; padding: 80px 20px 30px 20px;
         display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%;
@@ -127,6 +159,7 @@
     .footer-col a:hover { color: #00A3E0; }
     .footer-bottom { border-top: 1px solid #333; padding-top: 30px; width: 100%; max-width: 1200px; text-align: center; font-size: 0.9rem; color: #777; }
 
+    /* RESPONSIVE MOBIL */
     @media (max-width: 900px) {
         .header-fix { height: 100px; } .logo-svg { height: 60px; }
         .nav-links { display: none; } .mobile-btn { display: block; } .mobile-menu { top: 100px; }
@@ -134,11 +167,14 @@
         .titlu-mare { font-size: 2.2rem; } .subtitlu-mare { font-size: 1.1rem; margin-bottom: 40px; }
         
         .brand-row, .brand-row:nth-child(even) { 
-            flex-direction: column-reverse; gap: 25px; padding: 25px;
-            border-left: 6px solid #00A3E0; border-right: none;
+            flex-direction: column-reverse; 
+            gap: 25px; 
+            padding: 25px;
+            border-left: 6px solid #00A3E0;
+            border-right: none;
         }
         .brand-info h2 { font-size: 1.7rem; }
-        .brand-logo-holder { width: 100%; min-height: 120px; padding: 15px; }
+        .brand-logo-holder { width: 100%; min-height: 140px; padding: 15px; }
 
         .footer-grid { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px;}
         .footer-col details { border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 15px; }
@@ -185,7 +221,8 @@
         <div class="container">
             <h1 class="titlu-mare">Branduri & Parteneri</h1>
             <p class="subtitlu-mare">La Brezoi Construct lucrăm exclusiv cu producători de top pentru a garanta rezistența și calitatea proiectelor tale. Descoperă mărcile recunoscute pe care le găsești în stocul depozitului nostru din Mehala.</p>
-
+            
+            <!-- 1. HOLCIM -->
             <div class="brand-row">
                 <div class="brand-info">
                     <h2>Holcim</h2>
@@ -193,95 +230,4 @@
                     <span class="tag-materiale">🏗️ Ciment & Structuri</span>
                 </div>
                 <div class="brand-logo-holder">
-                    <span>HOLCIM</span>
-                </div>
-            </div>
-
-            <div class="brand-row">
-                <div class="brand-info">
-                    <h2>Cemacon</h2>
-                    <p>Unul dintre cei mai mari producători de blocuri ceramice (cărămidă) din România. Gama Evoceramic de la Cemacon oferă o izolație termică superioară și o rezistență seismică structurală excepțională, ideală pentru zidării exterioare sau compartimentări interioare.</p>
-                    <span class="tag-materiale">🧱 Cărămidă & Zidărie</span>
-                </div>
-                <div class="brand-logo-holder">
-                    <span>CEMACON</span>
-                </div>
-            </div>
-
-            <div class="brand-row">
-                <div class="brand-info">
-                    <h2>Ceresit</h2>
-                    <p>Brand de elită renumit pentru sistemele avansate de hidroizolații, adezivi profesionali pentru plăci ceramice (gresie și faianță) și chituri decorative de rosturi. Tehnologia Ceresit asigură rezistență totală la umezeală și durabilitate crescută.</p>
-                    <span class="tag-materiale">🧪 Adezivi & Hidroizolații</span>
-                </div>
-                <div class="brand-logo-holder">
-                    <span>CERESIT</span>
-                </div>
-            </div>
-
-            <div class="brand-row">
-                <div class="brand-info">
-                    <h2>AdePlast</h2>
-                    <p>Cel mai mare producător român de mortare uscate, tencuieli decorative și polistiren expandat. AdePlast este etalonul în materie de termosisteme complete, oferind soluții integrate pentru izolarea termică eficientă a fațadelor.</p>
-                    <span class="tag-materiale">🧼 Termosisteme & Mortare</span>
-                </div>
-                <div class="brand-logo-holder">
-                    <span>ADEPLAST</span>
-                </div>
-            </div>
-
-            <div class="brand-row">
-                <div class="brand-info">
-                    <h2>Baumit</h2>
-                    <p>Producător recunoscut european pentru tencuieli de înaltă calitate, șape industriale, mortare de zidărie și sisteme de fațade. Produsele Baumit pun accent pe un mediu interior sănătos și finisaje decorative cu o estetică impecabilă.</p>
-                    <span class="tag-materiale">🏡 Tencuieli & Finisaje</span>
-                </div>
-                <div class="brand-logo-holder">
-                    <span>BAUMIT</span>
-                </div>
-            </div>
-
-            <div class="brand-row">
-                <div class="brand-info">
-                    <h2>Knauf</h2>
-                    <p>Etalonul global în sisteme de gips-carton (plăci rigips, profile, accesorii), vată minerală bazaltică și sisteme de compartimentare uscată. Knauf oferă izolație fonică de excepție, protecție avansată la foc și finisaje interioare perfect plane.</p>
-                    <span class="tag-materiale">🔨 Gips-Carton & Profile</span>
-                </div>
-                <div class="brand-logo-holder">
-                    <span>KNAUF</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <details open><summary>Compania</summary><ul><li><a href="locatie-magazin.html">Despre Brezoi Construct</a></li><li><a>Termeni și condiții</a></li><li><a>Politica de confidențialitate</a></li><li><a>Politica de cookies</a></li></ul></details>
-            </div>
-            <div class="footer-col">
-                <details open><summary>Suport Clienți</summary><ul><li><a href="index.html#contact">Contactează-ne</a></li><li><a>Întrebări frecvente</a></li><li><a>Metode de plată</a></li></ul></details>
-            </div>
-            <div class="footer-col">
-                <details open><summary>Informații Utile</summary><ul><li><a>Informații despre livrare</a></li><li><a>Politica de retur</a></li><li><a>Servicii post-vânzare</a></li></ul></details>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Brezoi Construct S.R.L. | Toate drepturile rezervate.</p>
-        </div>
-    </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            var menu = document.getElementById("mobileMenu");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-        }
-    </script>
-
-</body>
-</html>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAA
