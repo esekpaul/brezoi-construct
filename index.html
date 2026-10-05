@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Materiale Construcții Timișoara | Brezoi Construct - Zona Mehala</title>
+<link rel="icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
+<meta name="description" content="Depozit de materiale de construcții cu tradiție de 30 de ani în Timișoara. Găsești ciment, polistiren, vopsele, scule și lemn. Oferim transport și consultanță.">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "SC Brezoi Construct SRL",
+  "image": "https://i.postimg.cc/QdScsnHm/Gemini-Generated-Image-p46xnop46xnop46x.png", 
+  "telephone": "0722427804",
+  "url": "https://brezoiconstruct.ro",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Locotenent Ovidiu Balea nr. 2",
+    "addressLocality": "Timișoara",
+    "addressRegion": "Timiș",
+    "postalCode": "300245",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.7667, 
+    "longitude": 21.1951
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+  ]
+}
+</script>
+
+<style>
+    /* --- 1. SETĂRI GENERALE --- */
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    
+    html, body {
+        margin: 0; padding: 0; width: 100%; height: auto;
+        font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+        line-height: 1.5; font-size: 18px; color: #333;
+        background-color: #1a1a1a;
+        overflow-x: hidden;
+    }
+
+    /* --- 2. HEADER --- */
+    .header-fix {
+        position: fixed; top: 0; left: 0; width: 100%; height: 120px; 
+        background-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        z-index: 99999;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .header-content {
+        width: 90%; max-width: 1800px; display: flex; justify-content: space-between; align-items: center;
+        height: 100%;
+    }
+    .logo-link { display: block; text-decoration: none; z-index: 100000; }
+    .logo-svg { height: 90px; width: auto; display: block; }
+
+    /* Meniul Desktop */
+    .nav-links { display: flex; gap: 30px; }
+    .nav-links a { 
+        text-decoration: none; color: #001F3F; font-weight: 800; font-size: 18px; 
+        text-transform: uppercase; padding: 10px; transition: 0.3s;
+    }
+    .nav-links a:hover { color: #00A3E0; }
+
+    /* Buton Mobil (Hamburger) */
+    .mobile-btn { 
+        display: none; 
+        font-size: 45px; 
+        color: #001F3F; 
+        background: transparent; 
+        border: none; 
+        cursor: pointer; 
+        padding: 15px; 
+        z-index: 2147483647; 
+        position: relative;
+    }
+
+    /* Meniul Mobil (Ascuns default) */
+    .mobile-menu {
+        display: none; 
+        position: fixed; top: 120px; left: 0; width: 100%;
+        background: white; border-top: 1px solid #eee; 
+        flex-direction: column; padding: 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
+        z-index: 99998;
+    }
+
+    .mobile-menu a {
+        text-decoration: none; color: #001F3F; font-weight: bold; font-size: 20px;
+        text-align: center; padding: 25px; border-bottom: 1px solid #f5f5f5; 
+        text-transform: uppercase; display: block; width: 100%;
+    }
+    .mobile-menu a:active { background-color: #f0f8ff; }
+
+    /* --- SECTIUNI --- */
+    section { width: 100%; display: flex; justify-content: center; padding: 150px 20px; }
+    .container { width: 100%; max-width: 1400px; text-align: center; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .titlu-sectiune { font-size: 2.5rem; color: #001F3F; margin-bottom: 40px; line-height: 1.3; font-weight: bold; }
+
+    /* HERO */
+    #home {
+        background: linear-gradient(135deg, #001F3F 0%, #0074D9 100%);
+        color: white; min-height: 100vh; padding-top: 150px;
+        display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+    }
+    .hero-titlu { font-size: 3.5rem; margin-bottom: 30px; line-height: 1.1; font-weight: bold; width: 100%; }
+    .hero-sub { font-size: 1.3rem; margin-bottom: 50px; opacity: 0.95; max-width: 900px; width: 100%; }
+    .btn {
+        background: #00A3E0; color: white; padding: 18px 50px; font-size: 20px; 
+        font-weight: bold; border-radius: 50px; text-decoration: none; display: inline-block; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* PRODUSE */
+    #produse { background-color: white; }
+    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 40px; width: 100%; }
+    .card { width: 260px; text-decoration: none; color: #333; display: flex; flex-direction: column; align-items: center; }
+    .poza-cerc { width: 220px; height: 220px; border-radius: 50%; border: 6px solid #0074D9; overflow: hidden; margin-bottom: 25px; background: #eee; }
+    .poza-cerc img { width: 100%; height: 100%; object-fit: cover; }
+    .card h3 { font-size: 1.5rem; color: #001F3F; margin: 0; font-weight: 700; }
+
+    /* CONTACT */
+    #contact { background-color: #f9f9f9; border-top: 8px solid #001F3F; }
+    .split-layout { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px; text-align: left; margin-top: 50px; width: 100%; }
+    .faq-side { flex: 1; min-width: 300px; }
+    .faq-side details { background: white; margin-bottom: 20px; padding: 20px; border-radius: 10px; border: 1px solid #ddd; cursor: pointer; }
+    .faq-side summary { font-size: 1.2rem; font-weight: bold; color: #001F3F; outline: none; }
+    .faq-side details p { font-size: 1rem; margin-top: 15px; color: #555; padding-left: 15px; border-left: 3px solid #00A3E0; }
+
+    .contact-side { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 40px; }
+    .contact-box { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); width: 100%; }
+    .contact-box.manager { border-left: 10px solid #0074D9; }
+    .contact-box.manager h3 { color: #0074D9; font-size: 1.8rem; margin: 0 0 10px 0; }
+    .phone-big { font-size: 2.2rem; font-weight: 900; color: #001F3F; text-decoration: none; display: block; margin: 15px 0; word-break: break-all; }
+    .contact-box.admin { border-left: 10px solid #555; background: #eef; }
+    .contact-box.admin h3 { color: #555; font-size: 1.5rem; margin: 0 0 10px 0; }
+    .contact-box.admin p { word-break: break-all; }
+
+    /* FOOTER */
+    footer { background-color: #1a1a1a; color: #ddd; padding: 80px 20px 30px 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%; }
+    .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; width: 100%; max-width: 1200px; margin-bottom: 50px; text-align: left; }
+    .footer-col details { background: transparent; border: none; padding: 0; margin: 0; }
+    .footer-col summary { font-size: 1.3rem; font-weight: bold; color: white; margin-bottom: 25px; cursor: default; outline: none; list-style: none; }
+    .footer-col summary::-webkit-details-marker { display: none; }
+    .footer-col ul { list-style: none; padding: 0; margin: 0; }
+    .footer-col li { margin-bottom: 15px; }
+    .footer-col a { text-decoration: none; color: #aaa; transition: 0.3s; font-size: 1rem; cursor: pointer; }
+    .footer-col a:hover { color: #00A3E0; }
+    .footer-bottom { border-top: 1px solid #333; padding-top: 30px; width: 100%; max-width: 1200px; text-align: center; font-size: 0.9rem; color: #777; }
+
+    /* MOBIL */
+    @media (max-width: 900px) {
+        .header-fix { height: 100px; } .logo-svg { height: 60px; }
+        .nav-links { display: none; } 
+        
+        /* BUTONUL MOBIL VIZIBIL */
+        .mobile-btn { display: block; } 
+        
+        .mobile-menu { top: 100px; }
+        section { padding: 100px 15px; } 
+        .hero-titlu { font-size: 2.2rem; line-height: 1.2; } .titlu-sectiune { font-size: 1.8rem; line-height: 1.4; }
+        .hero-sub { font-size: 1.1rem; padding: 0 10px; } .btn { padding: 15px 40px; font-size: 18px; }
+        .split-layout { flex-direction: column; gap: 40px; } .faq-side, .contact-side { min-width: 100%; }
+        .contact-box { padding: 25px; } .phone-big { font-size: 1.8rem; }
+        
+        .footer-grid { grid-template-columns: 1fr; gap: 10px; }
+        .footer-col details { border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px; }
+        .footer-col summary { cursor: pointer; margin-bottom: 5px; display: flex; justify-content: space-between; }
+        .footer-col summary::after { content: '+'; float: right; font-weight: normal; }
+        .footer-col details[open] summary::after { content: '-'; }
+        .footer-col ul { padding-top: 10px; padding-left: 10px; }
+    }
+    @media (min-width: 901px) {
+        .footer-col details { display: block !important; }
+        .footer-col details > summary { pointer-events: none; }
+        .footer-col details[open] > summary::after { content: ''; }
+    }
+</style>
+</head>
+<body>
+
+    <div class="header-fix">
+        <div class="header-content">
+            <a href="/" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M75 60 L150 20 L225 60 L210 60 L150 28 L90 60 H75Z" fill="#00A3E0"/>
+                    <path d="M165 48 V60 H185 V48 L175 42 L165 48Z" fill="#00A3E0"/>
+                    <text x="150" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="48" fill="#0C2444" letter-spacing="2">BREZOI</text>
+                    <text x="150" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="34" fill="#00A3E0" letter-spacing="3">CONSTRUCT</text>
+                </svg>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="/">Acasă</a>
+                <a href="#produse">Produse</a>
+                <a href="/Branduri-Partenere">Branduri Partenere</a>
+                <a href="/locatie-magazin">Locație Magazin</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="mobile-btn" onclick="var menu = document.getElementById('mobileMenu'); if(menu.style.display === 'flex') { menu.style.display = 'none'; } else { menu.style.display = 'flex'; }">
+                ☰
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Acasă</a>
+        <a href="#produse" class="menu-link" onclick="document.getElementById('mobileMenu').style.display='none'">Produse</a>
+        <a href="/Branduri-Partenere" class="menu-link">Branduri Partenere</a>
+        <a href="/locatie-magazin" class="menu-link">Locație Magazin</a>
+        <a href="#contact" class="menu-link" onclick="document.getElementById('mobileMenu').style.display='none'">Contact</a>
+    </div>
+
+    <section id="home">
+        <div class="container">
+            <h1 class="hero-titlu">Partenerul tău în construcții</h1>
+            <p class="hero-sub">Cu o experiență vastă de peste 30 de ani în domeniul materialelor de construcții, suntem un punct de reper în zona Mehala.</p>
+            <a href="#produse" class="btn">Vezi Oferta</a>
+        </div>
+    </section>
+
+    <section id="produse">
+        <div class="container">
+            <h2 class="titlu-sectiune">Categoriile Noastre</h2>
+            <p style="font-size: 1.2rem; color:#666; margin-bottom: 30px;">Alege o categorie pentru detalii.</p>
+            <div class="grid">
+                <a href="#" class="card"><div class="poza-cerc"><img src="https://placehold.co/300/00509E/FFF?text=Zidarie"></div><h3>Zidărie</h3></a>
+                <a href="#" class="card"><div class="poza-cerc"><img src="https://placehold.co/300/00509E/FFF?text=Izolatii"></div><h3>Izolații</h3></a>
+                <a href="#" class="card"><div class="poza-cerc"><img src="https://placehold.co/300/00509E/FFF?text=Scule"></div><h3>Scule</h3></a>
+                <a href="#" class="card"><div class="poza-cerc"><img src="https://placehold.co/300/00509E/FFF?text=Lemn"></div><h3>Lemn</h3></a>
+                <a href="#" class="card"><div class="poza-cerc"><img src="https://placehold.co/300/00509E/FFF?text=Vopsele"></div><h3>Vopsele</h3></a>
+                <a href="#" class="card"><div class="poza-cerc"><img src="https://placehold.co/300/00509E/FFF?text=Feronerie"></div><h3>Feronerie</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="titlu-sectiune">Întrebări & Contact</h2>
+            <div class="split-layout">
+                <div class="faq-side">
+                    <h3 style="color:#001F3F; margin-bottom: 30px;">Informații Utile</h3>
+                    <details><summary>Unde se face livrarea?</summary><p>Livrăm rapid în zona Mehala și în restul Timișoarei.</p></details>
+                    <details><summary>Există discount-uri?</summary><p>Da! Pentru proiecte mari, oferim prețuri negociabile.</p></details>
+                    <details><summary>Care este programul?</summary><p>Suntem deschiși Luni-Vineri între 08:00 - 17:00 și Sâmbătă între 08:00 - 12:00 (Programul poate varia).</p></details>
+                </div>
+                <div class="contact-side">
+                    <div class="contact-box manager">
+                        <h3>📞 Comenzi</h3>
+                        <p>Pentru materiale, stocuri și livrări:</p>
+                        <p style="margin-top:15px; font-size:1.1rem;"><strong>Manager: Dorin</strong></p>
+                        <a href="tel:0722427804" class="phone-big">0722 427 804</a>
+                        <p>Email: esekioandorin@yahoo.com</p>
+                    </div>
+                    <div class="contact-box admin">
+                        <h3>💻 Suport IT</h3>
+                        <p>Pentru probleme legate de site:</p>
+                        <p style="font-size:1.1rem;"><strong>Admin: Paul</strong></p>
+                        <p style="font-weight:bold; color:#333; font-size:0.9rem;">esekioanpaul@brezoiconstruct.ro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <details open><summary>Compania</summary><ul><li><a href="/despre-noi">Despre Brezoi Construct</a></li><li><a>Termeni și condiții</a></li><li><a>Politica de confidențialitate</a></li><li><a>Politica de cookies</a></li></ul></details>
+            </div>
+            <div class="footer-col">
+                <details open><summary>Suport Clienți</summary><ul><li><a href="#contact">Contactează-ne</a></li><li><a>Întrebări frecvente</a></li><li><a>Metode de plată</a></li></ul></details>
+            </div>
+            <div class="footer-col">
+                <details open><summary>Informații Utile</summary><ul><li><a>Informații despre livrare</a></li><li><a>Politica de retur</a></li><li><a>Servicii post-vânzare</a></li></ul></details>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Brezoi Construct S.R.L. | Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="//code.tidio.co/hii2wppyfe8jhpzrtagtu9sznrm9cx7u.js" async></script>
+
+</body>
+</html>
