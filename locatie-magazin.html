@@ -6,139 +6,20 @@
 
 <title>Locație și Contact | Brezoi Construct Timișoara</title>
 <link rel="icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
-<link rel="shortcut icon" type="image/png" href="https://i.postimg.cc/MpbxDX46/Chat-GPT-Image-28-oct-2025-15-41-54.png">
-
-<meta name="description" content="Cum ajungi la Brezoi Construct? Str. Lt. Ovidiu Balea 2A, Timișoara (zona Mehala). Harta, indicații și program de lucru.">
+<meta name="description" content="Cum ajungi la Brezoi Construct? Str. Lt. Ovidiu Balea 2A, Timișoara (zona Mehala). Hartă, indicații și program de lucru.">
 <meta name="robots" content="index, follow">
 
-<style>
-    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-    body {
-        margin: 0; padding: 0; width: 100%; height: auto;
-        font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-        line-height: 1.5; font-size: 18px; color: #333;
-        background-color: #1a1a1a; overflow-x: hidden;
-    }
-
-    .header-fix {
-        position: fixed; top: 0; left: 0; width: 100%; height: 120px;
-        background-color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        z-index: 99999; display: flex; align-items: center; justify-content: center;
-    }
-    .header-content {
-        width: 90%; max-width: 1800px; display: flex; justify-content: space-between; align-items: center;
-    }
-    .logo-link { display: block; text-decoration: none; z-index: 100000; }
-    .logo-svg { height: 90px; width: auto; display: block; transition: transform 0.3s; }
-    .logo-link:hover .logo-svg { transform: scale(1.05); }
-
-    .nav-links { display: flex; gap: 25px; }
-    .nav-links a { 
-        text-decoration: none; color: #001F3F; font-weight: 800; font-size: 20px;
-        text-transform: uppercase; padding: 10px; transition: all 0.3s ease;
-    }
-    .nav-links a:hover { color: #00A3E0; background: #f0f8ff; border-radius: 5px; }
-    .active-page { color: #00A3E0 !important; border-bottom: 3px solid #00A3E0; }
-
-    .mobile-btn { 
-        display: none; 
-        font-size: 45px; 
-        color: #001F3F; 
-        background: transparent; 
-        border: none; 
-        cursor: pointer; 
-        padding: 15px; 
-        z-index: 2147483647; 
-        position: relative;
-    }
-    
-    .mobile-menu {
-        display: none; position: fixed; top: 120px; left: 0; width: 100%;
-        background: white; border-top: 1px solid #eee; flex-direction: column; padding: 0;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.1); z-index: 99998;
-    }
-    .mobile-menu a {
-        text-decoration: none; color: #001F3F; font-weight: bold; font-size: 24px;
-        text-align: center; padding: 25px; border-bottom: 1px solid #f5f5f5; text-transform: uppercase;
-        display: block; width: 100%;
-    }
-    .mobile-menu a:active { background-color: #f0f8ff; }
-
-    .section-locatie { 
-        padding: 160px 20px 100px 20px; 
-        display: flex; justify-content: center;
-        background: linear-gradient(135deg, #001F3F 0%, #0074D9 100%);
-        min-height: 90vh; 
-    }
-    .container { width: 100%; max-width: 1400px; text-align: center; }
-    .titlu-mare { font-size: 3rem; color: #ffffff; font-weight: bold; margin-bottom: 60px; }
-
-    .map-container {
-        display: flex; flex-wrap: wrap; justify-content: space-between; gap: 50px;
-        text-align: left; align-items: stretch;
-    }
-
-    .map-frame {
-        flex: 3; min-width: 300px; height: 600px; 
-        border-radius: 20px; overflow: hidden;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 8px solid #fff; background: white;
-    }
-    iframe { width: 100%; height: 100%; border: 0; }
-
-    .info-panel {
-        flex: 2; min-width: 300px; background: #f9f9f9; padding: 40px; border-radius: 20px;
-        border-left: 12px solid #00A3E0; display: flex; flex-direction: column; justify-content: center;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-    }
-    .info-item { margin-bottom: 40px; }
-    .info-item:last-child { margin-bottom: 0; }
-    .info-item h3 { color: #001F3F; font-size: 1.8rem; margin: 0 0 15px 0; display: flex; align-items: center; gap: 15px; }
-    .info-item p { font-size: 1.2rem; color: #555; margin: 0; line-height: 1.6; }
-    .repere { background: #eef; padding: 25px; border-radius: 10px; margin-top: 20px; font-size: 1.1rem; color: #001F3F; line-height: 1.8;}
-
-    footer {
-        background-color: #1a1a1a; color: #ddd; padding: 80px 20px 30px 20px;
-        display: flex; justify-content: center; flex-direction: column; align-items: center; width: 100%;
-    }
-    .footer-grid {
-        display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px; width: 100%; max-width: 1200px; margin-bottom: 50px; text-align: left;
-    }
-    .footer-col details { background: transparent; padding: 0; margin: 0; border: none; }
-    .footer-col summary { font-size: 1.3rem; font-weight: bold; color: white; margin-bottom: 25px; cursor: default; outline: none; list-style: none; }
-    .footer-col summary::-webkit-details-marker { display: none; }
-    .footer-col ul { list-style: none; padding: 0; margin: 0; }
-    .footer-col li { margin-bottom: 15px; }
-    .footer-col a { text-decoration: none; color: #aaa; transition: 0.3s; font-size: 1rem; cursor: pointer; }
-    .footer-col a:hover { color: #00A3E0; }
-    .footer-bottom { border-top: 1px solid #333; padding-top: 30px; width: 100%; max-width: 1200px; text-align: center; font-size: 0.9rem; color: #777; }
-
-    @media (max-width: 900px) {
-        .header-fix { height: 100px; } .logo-svg { height: 60px; }
-        .nav-links { display: none; } .mobile-btn { display: block; } .mobile-menu { top: 100px; }
-        .section-locatie { padding-top: 130px; padding-bottom: 60px;} .titlu-mare { font-size: 2.2rem; margin-bottom: 40px; }
-        .map-container { flex-direction: column; gap: 30px; } 
-        .map-frame { height: 450px; } 
-        .info-panel { padding: 30px; } .info-item h3 {font-size: 1.5rem;} .info-item p, .repere {font-size: 1.1rem;}
-
-        .footer-grid { grid-template-columns: 1fr; gap: 15px; margin-bottom: 30px;}
-        .footer-col details { border-bottom: 1px solid #333; padding-bottom: 15px; margin-bottom: 15px; }
-        .footer-col summary { cursor: pointer; margin-bottom: 5px; display: flex; justify-content: space-between; }
-        .footer-col summary::after { content: '+'; float: right; font-weight: normal; }
-        .footer-col details[open] summary::after { content: '-'; }
-        .footer-col ul { padding-top: 15px; padding-left: 10px; }
-    }
-    @media (min-width: 901px) {
-        .footer-col details { display: block !important; }
-        .footer-col details > summary { pointer-events: none; }
-        .footer-col details[open] > summary::after { content: ''; }
-    }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#continut">Sari la conținut</a>
 
-    <div class="header-fix">
-        <div class="header-content">
-            <a href="index.html" class="logo-link">
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo-link" aria-label="Brezoi Construct — Acasă">
                 <svg class="logo-svg" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M75 60 L150 20 L225 60 L210 60 L150 28 L90 60 H75Z" fill="#00A3E0"/>
                     <path d="M165 48 V60 H185 V48 L175 42 L165 48Z" fill="#00A3E0"/>
@@ -146,110 +27,122 @@
                     <text x="150" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="34" fill="#00A3E0" letter-spacing="3">CONSTRUCT</text>
                 </svg>
             </a>
-            
-            <nav class="nav-links">
-                <a href="index.html">Acasă</a>
-                <a href="index.html#produse">Produse</a>
-                <a href="branduri-partenere.html">Branduri Partenere</a>
-                <a href="locatie-magazin.html" class="active-page">Locație Magazin</a>
-                <a href="index.html#contact">Contact</a>
+
+            <nav class="nav-links" aria-label="Navigare principală">
+                <a href="/">Acasă</a>
+                <a href="/#produse">Produse</a>
+                <a href="/Branduri-Partenere">Branduri</a>
+                <a href="/locatie-magazin" class="active-page">Locație</a>
+                <a href="/#contact">Contact</a>
             </nav>
-            <button class="mobile-btn" onclick="toggleMobileMenu()">☰</button>
+
+            <div class="header-cta">
+                <div class="header-meta">
+                    <span>Luni–Vineri 08:00–17:00</span>
+                    <span>Sâmbătă 08:00–12:00</span>
+                </div>
+                <a class="btn btn-call" href="tel:+40722427804">Sună 0722 427 804</a>
+            </div>
+
+            <div class="header-actions-mobile">
+                <a class="icon-btn" href="tel:+40722427804" aria-label="Sună acum">Tel</a>
+                <button class="mobile-btn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Deschide meniul" onclick="toggleMobileMenu()">☰</button>
+            </div>
         </div>
-    </div>
+    </header>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html" onclick="toggleMobileMenu()">Acasă</a>
-        <a href="index.html#produse" onclick="toggleMobileMenu()">Produse</a>
-        <a href="branduri-partenere.html" onclick="toggleMobileMenu()">Branduri Partenere</a>
-        <a href="locatie-magazin.html" onclick="toggleMobileMenu()">Locație Magazin</a>
-        <a href="index.html#contact" onclick="toggleMobileMenu()">Contact</a>
+        <a href="/">Acasă</a>
+        <a href="/#produse">Produse</a>
+        <a href="/Branduri-Partenere">Branduri Partenere</a>
+        <a href="/locatie-magazin">Locație Magazin</a>
+        <a href="/#contact">Contact</a>
+        <a class="btn" href="tel:+40722427804">Sună 0722 427 804</a>
     </div>
 
-    <section class="section-locatie">
-        <div class="container">
-            <h1 class="titlu-mare">Locație Magazin</h1>
-            <div class="map-container">
-                <div class="map-frame">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.6322971512403!2d21.194364175510613!3d45.7667232235955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455dfa54b3df63%3A0x6e9f28a8d11dcb14!2sNDXCsDQ2JzAwLjIiTiAyMcKwMTEnNDAuNCJF!5e0!3m2!1sro!2sro!4v1716815000000!5m2!1sro!2sro" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-                <div class="info-panel">
-                    <div class="info-item">
-                        <h3>📍 Adresa Exactă</h3>
-                        <p><strong>Strada Locotenent Ovidiu Balea nr. 2A</strong><br>Timișoara, Județul Timiș, 300410</p>
+    <main class="page" id="continut">
+        <section class="section-locatie">
+            <div class="container">
+                <h1 class="titlu-mare">Locație magazin</h1>
+                <p class="subtitlu-mare">Depozitul este în Mehala, lângă Profi, cu acces ușor dinspre Calea Aradului sau Săcălaz.</p>
+                <div class="map-container">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.6322971512403!2d21.194364175510613!3d45.7667232235955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455dfa54b3df63%3A0x6e9f28a8d11dcb14!2zNDXCsDQ2JzAwLjIiTiAyMcKwMTEnNDAuNCJF!5e0!3m2!1sro!2sro!4v1716815000000!5m2!1sro!2sro"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Hartă Brezoi Construct Timișoara">
+                        </iframe>
                     </div>
-                    <div class="info-item">
-                        <h3>🚗 Puncte de Reper</h3>
-                        <div class="repere">
-                            • Chiar lângă <strong>magazinul Profi</strong>.<br>
-                            • În sensul giratoriu din zona Mehala.<br>
-                            • Acces foarte ușor dinspre Calea Aradului sau Săcălaz.
+
+                    <div class="info-panel">
+                        <div class="info-item">
+                            <h3>Adresa</h3>
+                            <p><strong>Strada Locotenent Ovidiu Balea nr. 2A</strong><br>Timișoara, județul Timiș, 300410</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Puncte de reper</h3>
+                            <div class="repere">
+                                • Chiar lângă magazinul Profi.<br>
+                                • În sensul giratoriu din zona Mehala.<br>
+                                • Acces ușor dinspre Calea Aradului sau Săcălaz.
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <h3>Livrări și program</h3>
+                            <p>Transport în Timișoara și împrejurimi.<br>
+                            <strong>Luni–Vineri:</strong> 08:00–17:00<br>
+                            <strong>Sâmbătă:</strong> 08:00–12:00<br>
+                            <span style="font-size:0.9rem;color:#888;">În sărbători, sunați înainte.</span></p>
+                        </div>
+                        <div class="contact-actions">
+                            <a class="btn" href="tel:+40722427804">Sună acum</a>
+                            <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=45.7667,21.1951" target="_blank" rel="noopener">Indicații</a>
                         </div>
                     </div>
-                    <div class="info-item">
-                        <h3>🚚 Livrări & Program</h3>
-                        <p>Transport rapid în Timișoara și împrejurimi.<br><strong>Luni-Vineri:</strong> 08:00 - 17:00<br><strong>Sâmbătă:</strong> 08:00 - 12:00<br><span style="font-size:0.95rem; color:#888;">(Programul poate varia în funcție de sărbători)</span></p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <details open>
-                    <summary>Compania</summary>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <p class="footer-brand">Brezoi Construct S.R.L.</p>
+                    <p>Strada Locotenent Ovidiu Balea nr. 2A<br>Timișoara, zona Mehala</p>
+                    <p><a href="tel:+40722427804">0722 427 804</a><br>
+                    <a href="mailto:esekioandorin@yahoo.com">esekioandorin@yahoo.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h2>Navigare</h2>
                     <ul>
-                        <li><a href="locatie-magazin.html">Despre Brezoi Construct</a></li>
-                        <li><a>Termeni și condiții</a></li>
-                        <li><a>Politica de confidențialitate</a></li>
-                        <li><a>Politica de cookies</a></li>
+                        <li><a href="/">Acasă</a></li>
+                        <li><a href="/#produse">Produse</a></li>
+                        <li><a href="/Branduri-Partenere">Branduri partenere</a></li>
+                        <li><a href="/locatie-magazin">Locație magazin</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                     </ul>
-                </details>
+                </div>
+                <div class="footer-col">
+                    <h2>Program</h2>
+                    <p>Luni–Vineri: 08:00–17:00<br>Sâmbătă: 08:00–12:00<br>Duminică: închis</p>
+                    <p>Transport în Timișoara și împrejurimi.</p>
+                </div>
             </div>
-            <div class="footer-col">
-                <details open>
-                    <summary>Suport Clienți</summary>
-                    <ul>
-                        <li><a href="index.html#contact">Contactează-ne</a></li>
-                        <li><a>Întrebări frecvente</a></li>
-                        <li><a>Metode de plată</a></li>
-                    </ul>
-                </details>
+            <div class="footer-bottom">
+                <p>© 2026 Brezoi Construct S.R.L. Toate drepturile rezervate.</p>
             </div>
-            <div class="footer-col">
-                <details open>
-                    <summary>Informații Utile</summary>
-                    <ul>
-                        <li><a>Informații despre livrare</a></li>
-                        <li><a>Politica de retur</a></li>
-                        <li><a>Servicii post-vânzare</a></li>
-                    </ul>
-                </details>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Brezoi Construct S.R.L. | Toate drepturile rezervate.</p>
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            var menu = document.getElementById("mobileMenu");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-        }
-    </script>
+    <nav class="mobile-bar" aria-label="Acțiuni rapide">
+        <a class="primary" href="tel:+40722427804">Sună</a>
+        <a href="https://wa.me/40722427804">WhatsApp</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=45.7667,21.1951">Indicații</a>
+    </nav>
 
+    <script src="site.js"></script>
 </body>
 </html>
